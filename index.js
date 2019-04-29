@@ -19,11 +19,11 @@ var mesUsers = new mongoose.Schema({
 // Création du Model pour les users
 var mesUsers = mongoose.model('users', mesUsers);
  
-// On crée une instance du Model
+// Je crée une instance du Model
 var monUser = new mesUsers({ nom : 'bodenan', email: 'jovialbanga@gmail.com', pwd: 123456 });
 
  
-// On le sauvegarde dans MongoDB !
+// Je le sauvegarde dans MongoDB !
 monUser.save(function (err) {
   if (err) { throw err; }
   console.log('Utilisateur ajouté avec succès !');
