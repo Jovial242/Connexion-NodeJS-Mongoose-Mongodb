@@ -1,3 +1,4 @@
+// Pensez d'abord à installer Mongoose en tapant : npm install mongoose
 var mongoose=require('mongoose');
 
 mongoose.connect('mongodb://localhost/bdd_yami', function(err){
